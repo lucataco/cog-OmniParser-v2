@@ -1,13 +1,13 @@
-torch==2.4
+torch==2.4.0
 torchvision
 easyocr==1.7.1
 supervision==0.18.0
 transformers==4.49.0
 ultralytics==8.3.70
-numpy==1.26.4
+numpy<2
 einops==0.8.0
 opencv-python-headless==4.11.0.86
-pillow==10.4.0
+pillow
 timm==1.0.14
 accelerate
 huggingface-hub
