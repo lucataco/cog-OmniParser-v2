@@ -18,7 +18,7 @@ build:
   #   - "accelerate==1.4.0"
   #   - "huggingface-hub==0.28.1"
 
-  run:
-    - FLASH_ATTENTION_SKIP_CUDA_BUILD=TRUE pip install flash-attn --no-build-isolation
+  # run:
+  #   - FLASH_ATTENTION_SKIP_CUDA_BUILD=TRUE pip install flash-attn --no-build-isolation
 
 predict: "predict.py:Predictor" 

@@ -11,3 +11,4 @@ pillow==10.4.0
 timm==1.0.14
 accelerate
 huggingface-hub
+flash-attn
