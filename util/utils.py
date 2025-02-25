@@ -18,11 +18,12 @@ import easyocr
 
 MODEL_CACHE = "weights"
 os.makedirs(MODEL_CACHE, exist_ok=True)
-reader = easyocr.Reader(['en'], 
-                       model_storage_directory=MODEL_CACHE,
-                       download_enabled=True,
-                       # Use GPU if available
-                       gpu=torch.cuda.is_available())
+reader = easyocr.Reader(
+    ['en'], 
+    model_storage_directory=MODEL_CACHE,
+    download_enabled=False,
+    gpu=torch.cuda.is_available()
+)
 import time
 import base64
 
